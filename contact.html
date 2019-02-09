@@ -1,73 +1,70 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    
-    <!-- Site header -->
-    <header>
-        <!-- Name Box -->
-        <div>
-            <!-- My Name in Header -->
-            <h1>Stewart Brough</h1>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Portfolio</title>
 
-        <!-- Site Navigation Links -->
-        <nav>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Site header -->
+		<header>
+			<!-- Header Elements Wrapper -->
+			<div id="headerwrapper">
+				<!-- Name Box -->
+				<div>
+					<!-- My Name in Header -->
+					<h1 id="h1header">Stewart Brough</h1>
+				</div>
 
-            <!-- About -->
-            <a href="index.html">About</a>
+				<!-- Site Navigation Links -->
+				<div id="navheader">
+					<a href="index.html">About</a>|<a href="portfolio.html"
+						>Portfolio</a
+					>|<a href="contact.html">Contact</a>
+				</div>
+			</div>
+		</header>
 
-            <!-- Separator -->
-            <div>|</div>
+		<div id="articlewrapper">
+			<!-- Contact Article -->
+			<article>
+				<!-- Article Heading -->
+				<h1>Contact</h1>
 
-            <!-- Portfolio -->
-            <a href="portfolio.html">Portfolio</a>
+				<!-- Horizontal Rule - Article -->
+				<hr />
 
-            <!-- Separator -->
-            <div>|</div>
+				<!-- Article Section -->
+				<section>
+					<!-- Contact Form     -->
+					<form action="/Basic-Portfolio/action_page.php">
+						Name<br />
+						<input
+							type="text"
+							name="name"
+							value="John Smith"
+						/><br /><br />
+						Email<br />
+						<input
+							type="email"
+							name="email"
+							value="example@gmail.com"
+						/><br /><br />
+						Message<br />
+						<input type="text" name="message" /><br /><br />
+						<input type="submit" value="Submit" /><br />
+					</form>
+				</section>
+			</article>
+		</div>
+		<!-- Horizontal Rule - Bottom -->
+		<hr />
 
-            <!-- Contact -->
-            <a href="contact.html">Contact</a>
-        </nav>
-
-    </header>
-
-    <!-- Contact Article -->
-    <article>
-
-        <!-- Article Heading -->
-        <h1>Contact</h1>
-
-        <!-- Horizontal Rule - Article -->
-        <hr>
-
-        <!-- Article Section -->
-        <section>
-            <!-- Contact Form     -->
-            <form action="/Basic-Portfolio/action_page.php">
-                Name<br>
-                <input type="text" name="name" value="John Smith"><br><br>
-                Email<br>
-                <input type="email" name="email" value="example@gmail.com"><br><br>
-                Message<br>
-                <input type="text" name="message"><br><br>
-                <input type="submit" value="Submit"><br>
-            </form>  
-        </section>
-    </article>
-
-    <!-- Horizontal Rule - Bottom -->
-    <hr>
-
-    <!-- Site Footer -->
-    <Footer>
-        <div>Copyright &copy;</div>
-    </Footer>
-</body>
+		<!-- Site Footer -->
+		<Footer>
+			<div>Copyright &copy;</div>
+		</Footer>
+	</body>
 </html>
