@@ -84,6 +84,8 @@ article {
 }
 
 section {
+	margin-top: 30;
+	background: #ffffff;
 }
 
 p {
@@ -99,7 +101,8 @@ p {
 
 .port {
 	margin-right: 30px;
-	margin-top: 30px;
+	/* margin-top: 30px; */
+	margin-bottom: 60px;
 	float: left;
 	height: 200px;
 	width: 300px;
