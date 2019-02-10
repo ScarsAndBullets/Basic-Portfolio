@@ -62,7 +62,7 @@ h2 {
 }
 
 #articlewrapper {
-	margin: auto;
+	margin: 0 auto;
 	width: 960px;
 	min-height: 100%;
 	border: 1px solid #dddddd;
@@ -97,27 +97,40 @@ p {
 	margin-bottom: 20px;
 }
 
+.port {
+	margin-right: 30px;
+	margin-top: 30px;
+	float: left;
+	height: 200px;
+	width: 300px;
+	position: relative;
+}
+
+.portimage {
+	width: 300px;
+}
+
+.portlabel {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	z-index: 1;
+	height: 55px;
+	width: 300px;
+	padding: 10px;
+	background: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+}
+
 .footer {
+	clear: both;
 	height: 50px;
 	margin-top: -50px;
 	background: #666666;
 	text-align: center;
 	padding: 20px;
-	/* border-top: #4aaaa5 solid; */
 	border-top-color: #4aaaa5;
 	border-top-style: solid;
 	border-top-width: 7px;
-}
-
-.port {
-	margin: 30px;
-	margin-left: 0px;
-}
-
-.portimage {
-}
-
-.portlink {
-	position: absolute;
-	bottom: -5px;
 }
