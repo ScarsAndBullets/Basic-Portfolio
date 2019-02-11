@@ -1,14 +1,12 @@
 * {
 	box-sizing: border-box;
 }
+
 html,
 body {
-	height: 100%;
-	margin: 0;
 }
 
 body {
-	/* background-image: url("/Basic-Portfolio/assets/images/red_brick_wall.jpg"); */
 	background-image: url("https://images.unsplash.com/photo-1549571558-7ca00bbd1b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
 }
 
@@ -23,6 +21,22 @@ header {
 	box-sizing: content-box;
 }
 
+article {
+	padding: 20px;
+	width: 960px;
+	background: #ffffff;
+	border: #dddddd;
+	border: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
 h1 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	margin: 0;
@@ -34,13 +48,19 @@ h2 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-#headerwrapper {
+hr {
+	margin-bottom: 30px;
+}
+
+/* Keeps header elements the same width as the body of the page */
+.headerwrapper {
 	width: 960px;
 	margin: 0 auto;
 	height: 75px;
 }
 
-#h1header {
+/* Styles my name in the header - white font with teal background */
+.h1header {
 	background: #4aaaa5;
 	color: #ffffff;
 	height: 75px;
@@ -49,7 +69,7 @@ h2 {
 	padding: 20px;
 }
 
-#navheader {
+.navheader {
 	float: right;
 	height: 75px;
 	padding-top: 30px;
@@ -57,42 +77,26 @@ h2 {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-#h1body {
+/* Changes h1 style use teal font */
+.h1article {
 	color: #4aaaa5;
 }
 
-#articlewrapper {
+.articlewrapper {
 	margin: 0 auto;
 	width: 960px;
-	min-height: 100%;
 	border: 1px solid #dddddd;
+	/* min-height: 100%; */
+	/* overflow: auto; */
 }
 
-#articlewrapper2 {
+.articlewrapper2 {
 	/* padding: 20px; */
 	padding-bottom: 50px;
-}
-
-article {
-	/* margin: auto; */
-	padding: 20px;
-	width: 960px;
-	background: #ffffff;
-	border: #dddddd;
-	border: 10px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-section {
-	margin-top: 30;
 	background: #ffffff;
 }
 
-p {
-	margin-bottom: 1rem;
-}
-
-#profilepic {
+.profilepic {
 	float: left;
 	width: 20%;
 	margin-right: 20px;
@@ -101,7 +105,6 @@ p {
 
 .port {
 	margin-right: 30px;
-	/* margin-top: 30px; */
 	margin-bottom: 60px;
 	float: left;
 	height: 200px;
@@ -120,7 +123,6 @@ p {
 	z-index: 1;
 	height: 55px;
 	width: 300px;
-	/* padding: 10px; */
 	background: #4aaaa5;
 	color: #ffffff;
 	text-align: center;
@@ -129,11 +131,11 @@ p {
 .footer {
 	clear: both;
 	height: 50px;
-	margin-top: -50px;
 	background: #666666;
 	text-align: center;
 	padding: 20px;
 	border-top-color: #4aaaa5;
 	border-top-style: solid;
 	border-top-width: 7px;
+	margin-top: 30px;
 }
